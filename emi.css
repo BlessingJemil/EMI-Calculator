@@ -1,0 +1,115 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.bg{
+    background-image: url(./3d-black-white-background_23-2150499089.avif);
+    background-size: contain;
+}
+.w{
+    display: flex;
+    margin-left: 5%;
+    
+}
+.whole{
+    margin-left: 4%;
+    margin-top: 2%;
+    background-color: rgb(226, 226, 224);
+    padding: 3%;
+    border-radius: 10px;
+    border: 0.1px solid rgb(185, 182, 182);
+}
+label{
+ padding-left: 3%;
+ font-size: 18px;
+ }
+.l2{
+    padding-left: 15%;
+}
+.l3{
+    padding-left: 12%;
+}
+input{
+    padding: 5px;
+    margin-left: 1%;
+}
+.i2{
+    margin-left: 1.9%;
+}
+.i3{
+    margin-left: 1.7%;
+}
+button{
+    padding: 5px;
+    margin-left: -7px;
+}
+.b1{
+    padding-left: 9px;
+    padding-right: 9px;
+}
+.b2{
+    padding-left: 7px;
+    padding-right: 7px;
+}
+h1,h2,p{
+    padding-bottom: 3%;
+    padding-top: 2%;
+}
+.s{
+    margin-left: 45%;
+    margin-top: 1%;
+    padding: 10px;
+    font-size: 15px;
+    color: white;
+    background-color: rgb(9, 80, 203);
+    border: none;
+    border-radius: 5px;
+}
+.s:hover{
+    color: black;
+    background-color: aliceblue;
+}
+.em{
+    padding-left: 6%;
+}
+.right{
+    margin-left: 7%;
+    margin-top: 4%;
+    
+  
+ }
+.a{
+    border: 1px solid black;
+    height: 20px;
+    margin-left: 50%;
+    margin-right: 20%;
+    
+}
+.a1{
+    background-color: aquamarine;
+    width: 75px;
+    height: 20px;
+}
+.e{
+ padding: 1%;  
+ height: 25px;
+}
+.he{
+    padding-left: 40%;
+    color: rgb(0, 0, 0);
+    font-weight: 700;
+    text-shadow: 0.5px 0.5px white;
+}
+.if{
+    padding-left: 5%;
+}
+.us{
+    background-image: linear-gradient(30deg,rgb(249, 246, 181),rgb(255, 214, 139),rgb(255, 238, 192));
+    padding: 4%;
+    padding-right: 60px;
+    padding-bottom: 5%;
+    border-radius: 15px;
+    box-shadow: 1px 1px white;
+}
+
+

@@ -1,0 +1,78 @@
+<html>
+    <head>
+        <title>EMI Calculator</title>
+    </head>
+    <link rel="stylesheet" href="emi.css" type="text/css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/css/all.min.css" integrity="sha512-gMjQeDaELJ0ryCI+FtItusU9MkAifCZcGq789FrzkiM49D8lbDhoaUaIX4ASU187wofMNlgBJ4ckbrXM9sE6Pg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <body class="bg">
+        <div class="w">
+        <div class="whole">
+            <h1>EMI Calculator for Home Loan</h1><br>
+        <div>
+            <label class="l1">Home Loan Amount</label>
+            <input class="i1" type="number" id="hl">
+            <button class="b1">₹</button>
+        </div>
+        <br>
+        <div>
+            <label class="l2">Interest Rate</label>
+            <input class="i2" type="number" id="i">
+            <button class="b2">%</button>
+        </div>
+        <br>
+        <div>
+            <label class="l3"> LOAN Tenure</label>
+            <input class="i3" type="number" id="lt">
+            <button>Mo</button>
+
+        </div>
+        <br>
+        <button id="s" class="s" onclick="calc()">Submit</button>
+        <br>
+        <br>
+        <div class="em">
+        <h2>Loan EMI</h2>
+        <p id="emi" class="e"></p>
+        <h2>Total Interest Payable</h2>
+        <p class="e" id="t"></p>
+        <h2>Total Payment</h2>
+        <p class="e" id="tp"></p></div>
+        </div>
+        <div class="right">
+            <div class="us">
+            <h2 class="he">USD to INR</h2>
+            <div class="w">
+            <input type="number" id="usd" placeholder="USD" onchange="currency()" >
+            <p><i class="fa fa-arrow-right" class="if"></i></p>
+            <input type="number" id="inr" placeholder="INR">
+            </div>
+            </div>
+            
+        </div>
+    </div>
+    
+    </body>
+    <script>
+        function calc(){
+        let p=document.getElementById("hl").value;
+        let o=document.getElementById("i").value;
+        let n=document.getElementById("lt").value;
+        let r=(o/12)/100;
+        let E=p*r*(((1+r)**n)/(((1+r)**n)-1));
+        let T=E*n;
+        let T1=T-p;
+            document.getElementById("emi").innerHTML="₹"+" "+Math.floor(E);
+            document.getElementById("tp").innerHTML="₹"+" "+Math.floor(T);
+            document.getElementById("t").innerHTML="₹"+" "+Math.floor(T1);
+
+        }
+        function currency(){
+            let u=document.getElementById("usd").value;
+            
+            let d=80.19;
+            let c=u*d;
+            document.getElementById("inr").value=c;
+        }
+        
+    </script>
+</html>
